@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<div class="products">
+  <div class="iterator" *ngFor="let post of posts">
+    <div class="product">
+      <span class="product_price">{{ post.price }}</span>
+      <img class="product_image" src="./assets/imgs/{{post.imageurl}}.jpeg" alt="">
+      <h1 class="product_title">{{ post.title }}</h1>
+      <hr />
+      <p>{{ post.description }}</p>
+      <a href="#" class="product_btn btn">Buy Now</a>
+    </div>
+  </div>
+</div>
